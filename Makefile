@@ -15,6 +15,15 @@ doc/diagram/%.png: doc/%.dot
 $(BUILD_DIR):
 	@mkdir -p $@
 
+clean:
+	rm -rf $(BUILD_DIR)
+
+fmt:
+	go fmt ./...
+
+vet:
+	go vet ./...
+
 doc: $(DIAGRAMS)
 
 examples: $(BUILD_DIR)
