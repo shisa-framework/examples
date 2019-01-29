@@ -12,10 +12,10 @@ import (
 	otlog "github.com/opentracing/opentracing-go/log"
 
 	"github.com/shisa-platform/core/context"
-	"github.com/shisa-platform/examples/rpc/service"
 	"github.com/shisa-platform/core/httpx"
 	"github.com/shisa-platform/core/lb"
 	"github.com/shisa-platform/core/service"
+	"github.com/shisa-platform/examples/rpc/service"
 )
 
 var (

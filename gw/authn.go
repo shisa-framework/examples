@@ -9,9 +9,9 @@ import (
 	otlog "github.com/opentracing/opentracing-go/log"
 
 	"github.com/shisa-platform/core/context"
-	"github.com/shisa-platform/examples/idp/service"
 	"github.com/shisa-platform/core/lb"
 	"github.com/shisa-platform/core/models"
+	"github.com/shisa-platform/examples/idp/service"
 )
 
 type simpleUser struct {
