@@ -14,9 +14,9 @@ import (
 	consul "github.com/hashicorp/consul/api"
 	"go.uber.org/zap"
 
+	"github.com/shisa-platform/contrib/sd"
 	"github.com/shisa-platform/core/httpx"
 	"github.com/shisa-platform/core/lb"
-	"github.com/shisa-platform/core/sd"
 	"github.com/shisa-platform/examples/rpc/service"
 )
 

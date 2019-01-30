@@ -9,6 +9,7 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
+	"github.com/shisa-platform/contrib/sd"
 	"github.com/shisa-platform/core/authn"
 	"github.com/shisa-platform/core/auxiliary"
 	"github.com/shisa-platform/core/context"
@@ -16,7 +17,6 @@ import (
 	"github.com/shisa-platform/core/httpx"
 	"github.com/shisa-platform/core/lb"
 	"github.com/shisa-platform/core/middleware"
-	"github.com/shisa-platform/core/sd"
 )
 
 func serve(logger *zap.Logger, addr, debugAddr, healthcheckAddr string) {
