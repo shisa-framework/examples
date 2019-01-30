@@ -89,7 +89,15 @@
   version = "v0.8.1"
 
 [[projects]]
-  digest = "1:6f6c751f4f0db058d661190ac5774431bcadd911fd21be1a0ae3db5550c9c0eb"
+  branch = "master"
+  digest = "1:fc0f444cf2730e5208876379701fef25a54c119b3881e73776adb727083b9e45"
+  name = "github.com/shisa-platform/contrib"
+  packages = ["sd"]
+  pruneopts = "UT"
+  revision = "93ecd0f91741e67393292c4471277b464afc09df"
+
+[[projects]]
+  digest = "1:09ce75f9513573d9743a8540faf7cf368eb0573f9c5458807d599511fa3a1eff"
   name = "github.com/shisa-platform/core"
   packages = [
     "authn",
@@ -108,8 +116,8 @@
     "uuid",
   ]
   pruneopts = "UT"
-  revision = "a976d5b05f6753f7843f2ee370cfdfaa2e8b056a"
-  version = "v0.6.0"
+  revision = "bfce791d27a981a13b55684870b0c92b2911c162"
+  version = "v0.6.3"
 
 [[projects]]
   digest = "1:ac6f26e917fd2fb3194a7ebe2baf6fb32de2f2fbfed130c18aac0e758a6e1d22"
@@ -193,6 +201,7 @@
     "github.com/opentracing/opentracing-go",
     "github.com/opentracing/opentracing-go/ext",
     "github.com/opentracing/opentracing-go/log",
+    "github.com/shisa-platform/contrib/sd",
     "github.com/shisa-platform/core/authn",
     "github.com/shisa-platform/core/auxiliary",
     "github.com/shisa-platform/core/context",
@@ -201,7 +210,6 @@
     "github.com/shisa-platform/core/lb",
     "github.com/shisa-platform/core/middleware",
     "github.com/shisa-platform/core/models",
-    "github.com/shisa-platform/core/sd",
     "github.com/shisa-platform/core/service",
     "github.com/uber/jaeger-client-go",
     "github.com/uber/jaeger-client-go/config",

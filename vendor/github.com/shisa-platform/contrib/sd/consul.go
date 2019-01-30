@@ -8,6 +8,8 @@ import (
 
 	"github.com/ansel1/merry"
 	consul "github.com/hashicorp/consul/api"
+
+	"github.com/shisa-platform/core/sd"
 )
 
 //go:generate charlatan -output=./consulregistry_charlatan.go consulRegistry
@@ -28,8 +30,8 @@ type consulSD struct {
 	health consulResolver
 }
 
-var _ Registrar = &consulSD{}
-var _ Resolver = &consulSD{}
+var _ sd.Registrar = &consulSD{}
+var _ sd.Resolver = &consulSD{}
 
 func NewConsul(client *consul.Client) *consulSD {
 	return &consulSD{
